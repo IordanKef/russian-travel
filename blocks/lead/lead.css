@@ -1,0 +1,29 @@
+.lead {
+  background-color: #2A2C2F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 148px 0;
+}
+
+
+@media screen and (max-width: 1025px) {
+  .lead {
+    padding: 0 48px 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .lead {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .lead {
+    padding: 0;
+  }
+}
+
