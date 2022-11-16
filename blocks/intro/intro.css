@@ -1,31 +1,26 @@
-.lead {
-  background-color: #2A2C2F;
+.intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   box-sizing: border-box;
+  background-color: #2A2C2F;
   width: 100%;
-  min-width: 320px;
-
-  padding: 0 148px 0;
+  padding:  92px 148px;
 }
 
-
 @media screen and (max-width: 1025px) {
-  .lead {
-    padding: 0 48px 0;
+  .intro {
+    padding:  92px 48px;
   }
 }
 
 @media screen and (max-width: 769px) {
-  .lead {
-    padding: 0;
+  .intro {
+    padding:  88px 24px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .lead {
-    padding: 0;
+  .intro {
+    padding:  64px 16px;
   }
 }
-
