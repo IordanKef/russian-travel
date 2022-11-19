@@ -3,11 +3,22 @@
   margin: 0;
   margin-top: 40px;
   max-width: 690px;
-  font-family: 'Inter';
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 769px) {
+  .intro__text {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .intro__text {
+    max-width: 288px;
+  }
 }

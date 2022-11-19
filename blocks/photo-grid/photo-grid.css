@@ -1,8 +1,44 @@
 .photo-grid {
   width: 100%;
   display: grid;
-  background-color: #2A2C2F;
   grid-gap: 16px;
   grid-template-columns: repeat(auto-fit, 284px);
   justify-content: center;
+}
+
+/*Почему-то приходиться добавлять 1px в медиа-запросах, чтобы работало*/
+
+@media screen and (max-width: 1025px) {
+  .photo-grid {
+    grid-gap: 14px;
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .photo-grid {
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fit, 352px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .photo-grid {
+    grid-gap: 14px;
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .photo-grid {
+    grid-gap: 14px;
+    grid-template-columns: repeat(auto-fit, 255px);
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .photo-grid {
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, 288px);
+  }
 }

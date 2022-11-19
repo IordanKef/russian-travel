@@ -1,12 +1,10 @@
 .lead {
-  background-color: #2A2C2F;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
   min-width: 320px;
-
   padding: 0 148px 0;
 }
 

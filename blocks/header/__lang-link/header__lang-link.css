@@ -1,5 +1,4 @@
 .header__lang-link {
-  font-family: 'Inter';
   color: #FFFFFF;
   text-decoration: none;
   font-size: 24px;
@@ -8,4 +7,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 426px) {
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 1.11;  }
+}
 
