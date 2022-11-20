@@ -1,5 +1,7 @@
 .places__text {
   display: flex;
+  width: 100%;
+  max-width: 484px;
   flex-direction: column;
   row-gap: 27px;
 }

@@ -6,4 +6,32 @@
   font-weight: 900;
   font-size: 72px;
   line-height: 1.06;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+@media screen and (max-width: 966px) {
+  .places__title {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .places__title {
+    font-size: 42px;
+    line-height: 1.1;
+    max-width: 200px;
+  }
+}
+
+
+@media screen and (max-width: 426px) {
+  .places__title {
+    font-size: 32px;
+    line-height: 1.09;
+    padding: 0 16px;
+  }
 }
