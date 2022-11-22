@@ -4,4 +4,9 @@
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: opacity .2s linear;
+}
+
+.places__link:hover {
+  opacity: .8;
 }

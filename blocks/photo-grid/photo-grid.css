@@ -4,14 +4,19 @@
   grid-gap: 16px;
   grid-template-columns: repeat(auto-fit, 284px);
   justify-content: center;
+  box-sizing: border-box;
+  padding: 0 48px;
 }
 
-/*Почему-то приходиться добавлять 1px в медиа-запросах, чтобы работало*/
+/*Почему-то приходиться добавлять 1px в медиа-запросах,
+чтобы правило срабатывало на нужном разрешении - нашёл информацию,
+что это какой-то глюк windows*/
 
 @media screen and (max-width: 1025px) {
   .photo-grid {
     grid-gap: 14px;
     grid-template-columns: repeat(auto-fit, 300px);
+    padding: 0 24px;
   }
 }
 
@@ -36,16 +41,11 @@
   }
 }
 
-@media screen and (max-width: 524px) {
-  .photo-grid {
-    grid-gap: 12px;
-    grid-template-columns: 90%;
-  }
-}
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 521px) {
   .photo-grid {
+    padding: 0 16px;
+    grid-template-columns: 1fr;
     grid-gap: 12px;
-    grid-template-columns: repeat(auto-fit, 288px);
   }
 }
