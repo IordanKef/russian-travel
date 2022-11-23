@@ -1,16 +1,9 @@
 .places__title {
-  color: #FFFFFF;
-  margin: 0;
-  padding: 0;
   max-width: 460px;
   font-weight: 900;
   font-size: 72px;
   line-height: 1.06;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-
 
 @media screen and (max-width: 966px) {
   .places__title {
@@ -26,7 +19,6 @@
     max-width: 200px;
   }
 }
-
 
 @media screen and (max-width: 426px) {
   .places__title {

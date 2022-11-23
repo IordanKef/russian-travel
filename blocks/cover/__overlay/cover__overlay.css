@@ -9,6 +9,7 @@
   gap: 32px;
   flex-direction: column;
   justify-content: center;
+  transition: background-color .2s ease-in-out;
 }
 
 .cover__overlay:hover {
