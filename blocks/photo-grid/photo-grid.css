@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: repeat(auto-fit, 284px);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   box-sizing: border-box;
   padding: 0 48px;
@@ -12,40 +12,31 @@
 чтобы правило срабатывало на нужном разрешении - нашёл информацию,
 что это какой-то глюк windows*/
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1279px) {
   .photo-grid {
     grid-gap: 14px;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .photo-grid {
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 24px;
   }
 }
 
-@media screen and (max-width: 928px) {
-  .photo-grid {
-    grid-gap: 16px;
-    grid-template-columns: repeat(auto-fit, 352px);
-  }
-}
-
-@media screen and (max-width: 721px) {
+@media screen and (max-width: 767px) {
   .photo-grid {
     grid-gap: 14px;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: 1fr;
   }
 }
-
-@media screen and (max-width: 614px) {
-  .photo-grid {
-    grid-gap: 14px;
-    grid-template-columns: repeat(auto-fit, 255px);
-  }
-}
-
 
 @media screen and (max-width: 521px) {
   .photo-grid {
     padding: 0 16px;
-    grid-template-columns: 1fr;
     grid-gap: 12px;
   }
 }
